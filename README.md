@@ -6,6 +6,7 @@ Para tal, rode o seguinte script
 
 ```bash
 bash ./generate.sh "your.github@email.com"
+```
 
 Depois de executado, o programa solicitará um nome de arquivo para a chave SSH. Se apenas pressionarmos Enter, o nome e a localização padrão serão utilizados (/home/usuário/.ssh/id_rsa). Após isso, também será solicitada uma senha para a chave, recomendo que apenas clique Enter - deixando vazio.
 
