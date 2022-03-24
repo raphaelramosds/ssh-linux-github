@@ -10,12 +10,10 @@ bash ./generate.sh "your.github@email.com"
 
 Once it's executed, the console will demand you a name for a file it'll put the SSH key. If we only push Enter, its name and location will be `/home/usuário/.ssh/id_rsa`(the standard). Moreover, it'll also require you to type a pass for this key. I personally recomend you to push Enter.
 
-Now, sign in on GitHub, click onto your profile photo locate on right top corner and click Settings. 
+Now, sign in on GitHub, click onto your profile photo locate on right top corner and click Settings. On the left-sidebar, go to SSH > GPG Keys
 
-Na barra lateral da tela de configuração, clique em SSH and GPG keys.
+As you click SSH key, choose a title which represents the computer where the keyy is going to be storage, copy all content of `id_rsa.pub` (located on your explorer `/home/yourUser/.ssh`) and past it on the Key field.
 
-Ao clicar em SSH key, escolha um título que represente o computador onde a chave está armazenada, copie todo o conteúdo do arquivo id_rsa.pub (armazenado no diretório /home/usuário/.ssh) e cole no campo Key.
-
-Pronto! Agora sempre que você clonar algum repositório do Github, tenha certeza de cloná-lo com o domínio do SSH e não HTTP!
+Well done! Just, from now on, whenever you clone a repo from Github, make sure to set the domain as SSH and not HTTP!
 
 ![Tux, the Linux mascot](/ssh-clone.png)
